@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>{{ name }}</h1>
+        <p>{{ profession }}</p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>Hi! I am {{ name }}, a passionate Python developer specializing in Flask web applications.</p>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <ul>
+            <li>Flask Blog App</li>
+            <li>Dashboard</li>
+            <li>Portfolio Website</li>
+        </ul>
+    </section>
+
+    <footer>
+        <a href="{{ url_for('contact') }}">Contact Me</a>
+    </footer>
+</body>
+</html>
